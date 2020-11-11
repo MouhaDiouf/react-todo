@@ -6,13 +6,18 @@ import { useState } from 'react';
 
 function App() {
   const [inputText, setInputText] = useState('');
-
+  const [todos, setTodos] = useState([]);
   return (
     <div className="App">
       <h1>Hello React</h1>
       <header>Mouha's Todo List</header>
-      <Form setInputText={setInputText} />
-      <TodoList />
+      <Form
+        todos={todos}
+        setTodos={setTodos}
+        setInputText={setInputText}
+        inputText={inputText}
+      />
+      <TodoList todos={todos} />
     </div>
   );
 }
