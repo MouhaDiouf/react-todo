@@ -132,8 +132,15 @@ select {
   pointer-events: none;
 }
 /* Transition */
-/*
-.select:hover::after {
+
+/* .select:hover::after {
   transform: scale(1.5);
+} */
+
+@media screen and (max-width: 700px) {
+  form {
+    width: 80%;
+    margin: 0 auto;
+    flex-direction: column;
+  }
 }
-*/
