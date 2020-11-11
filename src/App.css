@@ -137,10 +137,14 @@ select {
   transform: scale(1.5);
 } */
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   form {
     width: 80%;
     margin: 0 auto;
     flex-direction: column;
+  }
+
+  form > input.todo-input {
+    width: 300px;
   }
 }
